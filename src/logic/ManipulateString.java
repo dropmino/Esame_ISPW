@@ -8,14 +8,12 @@ public class ManipulateString {
 	
 	public String concatenete(String str1 , String str2) {
 		
-		String res = str1.concat(str2);
-		return res;
+		return str1.concat(str2);
 	}
 
 	public boolean contain(String str1 , String str2) {
 		
-		if(str1.contains(str2)) return true;
-		return false;
+		return str1.contains(str2);
 	}
 
 	
@@ -38,8 +36,8 @@ public class ManipulateString {
 		
 		String conc = elem.concatenete(str1, str2);
 		cont = elem.contain(str1, str2);
-		logger.log(Level.INFO, "\nstringa1 concatenata = " + conc + "  \nstr2 è contenuta in str1?  = " + cont);
-
+		logger.log(Level.INFO, "\nstringa1 concatenata = " + conc);
+		logger.log(Level.INFO, "\nstr2 è contenuta in str1?  = " + cont);
 	
 	}
 }
